@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Outstagram" parent="Base.App">
+        <item name="android:navigationBarColor">@color/branding_secondary_variant</item>
+    </style>
+
+    <style name="Outstagram.TextAppearance.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+</resources>

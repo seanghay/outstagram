@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.App" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/branding_primary</item>
+        <item name="colorPrimaryVariant">@color/branding_secondary_variant</item>
+        <item name="colorOnPrimary">@color/branding_on_primary</item>
+
+        <item name="colorSecondary">@color/branding_on_secondary</item>
+        <item name="colorSecondaryVariant">@color/branding_secondary_variant</item>
+        <item name="colorOnSecondary">@color/branding_on_secondary</item>
+        <item name="colorPrimaryDark">@color/branding_secondary_variant</item>
+
+        <item name="colorError">@color/branding_error</item>
+        <item name="colorOnError">@color/branding_on_error</item>
+
+        <item name="colorSurface">@color/branding_surface</item>
+        <item name="colorOnSurface">@color/branding_on_surface</item>
+        <item name="android:windowBackground">@color/branding_background</item>
+        <item name="colorOnBackground">@color/branding_on_background</item>
+        <item name="android:fontFamily">@font/cabin</item>
+
+        <item name="appBarLayoutStyle">@style/Outstagram.Widgets.AppBarLayout</item>
+        <item name="toolbarStyle">@style/Outstagram.Widgets.Toolbar</item>
+        <item name="textAppearanceButton">@style/Outstagram.TextAppearance.Button</item>
+    </style>
+</resources>

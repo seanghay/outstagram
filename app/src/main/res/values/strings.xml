@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Outstagram</string>
+    <string name="permission_required">Read and Write permission are required</string>
+    <string name="storage_permission">Storage Permission</string>
+    <string name="message_storage_permission">Storage permission is required for reading photos from your gallery</string>
+    <string name="go_to_top">Go to top</string>
+</resources>

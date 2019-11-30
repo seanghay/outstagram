@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="Outstagram.Widgets.AppBarLayout" parent="Widget.MaterialComponents.AppBarLayout.Surface" />
+
+    <style name="Outstagram.Widgets.Toolbar" parent="Widget.MaterialComponents.Toolbar.Surface">
+        <item name="titleTextAppearance">@style/Outstagram.TextAppearance.ToolbarTitle</item>
+    </style>
+
+    <style name="Outstagram.TextAppearance.ToolbarTitle" parent="TextAppearance.MaterialComponents.Body1" />
+
+
+</resources>
+

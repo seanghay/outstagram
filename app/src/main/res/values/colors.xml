@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#fff</color>
+    <color name="branding_primary">#34B8FF</color>
+    <color name="branding_on_primary">@color/white</color>
+    <color name="branding_primary_variant">#2190CC</color>
+
+    <color name="branding_secondary">#252525</color>
+    <color name="branding_on_secondary">@color/white</color>
+    <color name="branding_secondary_variant">#090909</color>
+
+    <color name="branding_error">#f96d15</color>
+    <color name="branding_on_error">@color/white</color>
+
+    <color name="branding_surface">@color/branding_secondary</color>
+    <color name="branding_background">#111111</color>
+    <color name="branding_on_surface">@color/white</color>
+    <color name="branding_on_background">@color/white</color>
+
+</resources>
