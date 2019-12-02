@@ -16,7 +16,6 @@ class ChooseViewModel : ViewModel() {
     fun loadPhotos() {
         viewModelScope.launch {
             images.value = GalleryRepository.getPhotos()
-            isLoading.value = false
         }
     }
 }

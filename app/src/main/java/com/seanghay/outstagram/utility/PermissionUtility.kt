@@ -56,7 +56,7 @@ object PermissionUtility {
             .setTitle(R.string.storage_permission)
             .setMessage(R.string.message_storage_permission)
             .setPositiveButton(android.R.string.yes) { dialog, _ ->
-                showApplicationSettings(fragment)
+                requestReadWrite(fragment)
                 dialog.dismiss()
             }
             .setNegativeButton(android.R.string.no) { dialog, _ ->

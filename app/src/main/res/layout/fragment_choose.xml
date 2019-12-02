@@ -10,10 +10,11 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="@integer/span_count"
         tools:itemCount="30"
-        tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-        tools:listitem="@layout/item_choose"
-        tools:spanCount="3" />
+        tools:listitem="@layout/item_choose" />
 
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/fabGoToTop"
@@ -22,8 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="18dp"
-        app:elevation="4dp"
         app:backgroundTint="?attr/colorPrimary"
+        app:elevation="4dp"
         app:icon="@drawable/ic_up"
         app:iconTint="?attr/colorOnSecondary" />
 

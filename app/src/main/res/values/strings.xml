@@ -4,4 +4,6 @@
     <string name="storage_permission">Storage Permission</string>
     <string name="message_storage_permission">Storage permission is required for reading photos from your gallery</string>
     <string name="go_to_top">Go to top</string>
+    <string name="discard_editing">Discard editing</string>
+    <string name="message_discard_editing">Are you sure you want to discard?</string>
 </resources>

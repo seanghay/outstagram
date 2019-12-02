@@ -40,7 +40,6 @@ class ChooseFragment : Fragment() {
     private val sharedPreferences =
         OutstagramLoader.appContext.getSharedPreferences("scroll", Context.MODE_PRIVATE)
 
-
     private fun safeStart() {
         recyclerView.addOnScrollListener(scrollListener)
 
@@ -58,6 +57,8 @@ class ChooseFragment : Fragment() {
                         0
                     )
                 }
+
+                viewModel.isLoading.value = false
             }
         })
 
@@ -84,11 +85,11 @@ class ChooseFragment : Fragment() {
                                 ?: requireContext().cacheDir.path
                         ).compressToFile(File(it.path))
                     withContext(Dispatchers.Main) {
-                        findNavController()
-                            .navigate(
-                                R.id.action_chooseFragment_to_editorFragment,
-                                bundleOf("path" to file.path)
-                            )
+                        findNavController().navigate(
+                            R.id.action_chooseFragment_to_editorFragment,
+                            bundleOf("path" to file.path)
+                        )
+
                         viewModel.isLoading.value = false
                     }
                 }
@@ -105,7 +106,7 @@ class ChooseFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_choose, container, false).also {
             it.recyclerView.let { rv ->
-                rv.layoutManager = createLayoutManger()
+                // rv.layoutManager = createLayoutManger()
                 rv.adapter = chooseAdapter
                 rv.setHasFixedSize(true)
             }
@@ -158,7 +159,7 @@ class ChooseFragment : Fragment() {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
                 safeStart()
                 return
-            }
+            } else checkPermissions()
         }
     }
 
